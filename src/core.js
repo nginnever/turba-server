@@ -1,5 +1,7 @@
 import {List, Map} from 'immutable'
 
+export const INITIAL_STATE = Map({topics: List.of()})
+
 export function setState(state, newState) {
 	return state.merge(newState)
 }
