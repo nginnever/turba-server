@@ -1,0 +1,36 @@
+{
+  "name": "turba-server",
+  "version": "0.0.1",
+  "description": "This is a module required by turba-client. This is currently using reddis but will soon use IPFS pub/sub.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive",
+    "test:watch": "npm run test -- --watch"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nginnever/turba-server.git"
+  },
+  "author": "nginnever",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nginnever/turba-server/issues"
+  },
+  "homepage": "https://github.com/nginnever/turba-server#readme",
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-core": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "chai": "^3.5.0",
+    "chai-immutable": "^1.5.4",
+    "mocha": "^2.5.3"
+  },
+  "dependencies": {
+    "immutable": "^3.8.1"
+  }
+}
